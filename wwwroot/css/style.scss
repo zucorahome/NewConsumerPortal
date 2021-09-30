@@ -37,6 +37,7 @@ $heading-fonts: "Publico Headline", sans-serif;
     font-style: normal;
 }
 
+
 @font-face {
     font-family: 'Publico Headline';
     font-weight: 500;
@@ -136,6 +137,15 @@ h6 {
     color: white !important;
 }
 
+/*Mixins*/
+
+@mixin background-image($image) {
+        background-image: url("../images/consumer-portal/#{$image}.jpg");
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
 
 /*Background classes*/
 .purple-background {
@@ -145,4 +155,32 @@ h6 {
 
 .login-background {
     background-color: #F8FBFD;
+}
+
+/*Bootstrap class changes*/
+
+.btn-primary{
+    background-color:$zucoraPurple;
+    border-color:$zucoraPurple;
+
+    &:hover{
+        background-color:$lilacPurple;
+        border-color:$lilacPurple;
+    }
+}
+
+
+/*Login page styling*/
+.login-imageBackground{
+   @include background-image("login-page");
+}
+
+.account-imageBackground{
+    @include background-image("account-page-image");
+}
+
+/*Creat account styling*/
+
+.createAccount-successIcon{
+    width:50%;
 }
