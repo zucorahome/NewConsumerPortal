@@ -1,0 +1,89 @@
+﻿@page
+@model New_ConsumerPortal.Pages.create_myplansModel
+@{
+    ViewData["Title"] = "Create My Plans";
+}
+<section class="row g-0 mb-4">
+    <h1 class="d-none">Secondary navigation with portal pages</h1>
+    <!--hero image-->
+    <div class="col-12 hero-background">
+        <img src="~/images/consumer-portal/first-hero-image.jpg" alt="An empty living room with blue sofa and plants on the table at left side." class="img-fluid invisible" />
+    </div>
+    <!--Profile info-->
+    <div class="profile-infoContainer">
+        <div class="profile-iconContainer d-flex justify-content-center">
+            <img src="./images/consumer-portal/user-image-spacey.png" alt="An icon of a user icon in purple color with light background in circle shape." class="img-fluid" />
+        </div>
+        <div class="profile-textContainer row">
+            <div class="col-12 col-lg-6 offset-lg-3">
+                <h1 class="text-center fw-light">Hello, <span class="purple-text">Name!</span></h1>
+                <p class="text-center">ID <span class="fw-bold">1234567</span></p>
+                <p class="text-center w-75 mx-auto">You have successfully created your account. Please check your email for a verification link in order to access your account.</p>
+            </div>
+        </div>
+    </div>
+    <!--Sub menu-->
+    <nav>
+        <ul class="nav justify-content-center custom-navTabs">
+            <li class="nav-item">
+                <a class="nav-link" href="#" aria-current="page">My Plans</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Create My Plan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">My Account Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">My Payment Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">My Transactions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">My Gift Cards</a>
+            </li>
+        </ul>
+    </nav>
+</section>
+<!--Page content-->
+<section class="container g-0">
+    <div class="row">
+        <div class="col-12">
+            <h3>Create My Plan</h3>
+            <p class="">Here are some options our members chose in order to keep these essential services:</p>
+            <!--Adding extra line-->
+            <div class="w-100"></div>
+            <!--Plan options-->
+            <div class="d-flex justify-content-between align-items-center my-3 row">
+                <!--Premiumn too high-->
+                <div class="col-12 col-lg-4">
+                    <div class="p-3 white-background">
+                        <img src="./images/consumer-portal/calculator-icon.png" alt="An icon of calculator with female sitting on the top of it with a laptop." class="img-fluid mx-auto d-block" />
+                        <p class="text-center fw-bold">Premiumns too high?</p>
+                        <p class="text-center">Consider lowering your monthly plan fee by changing plans! You can always get back the coverage you had down the road.</p>
+                        <button class="btn-primary btn text-uppercase mx-auto d-block">Go to available plans</button>
+                    </div>
+                </div>
+                <!--freeze plan option-->
+                <div class="col-12 col-lg-4">
+                    <div class="p-3 white-background">
+                        <img src="./images/consumer-portal/notepad-icon.png" alt="An icon of a notepad with currency coins on the left." class="img-fluid mx-auto d-block" />
+                        <p class="text-center fw-bold">Going away?</p>
+                        <p class="text-center">Take advantage of our Freeze Premium protection that allows you to keep your Smarter Living member benefits for up to 6 months for only $5.99 per month.</p>
+                        <button class="btn-primary btn text-uppercase mx-auto d-block">Freeze my Premiumn</button>
+                    </div>
+                </div>
+                <!--cancel-->
+                <div class="col-12 col-lg-4">
+                    <div class="p-3 white-background">
+                        <img src="./images/consumer-portal/cancel-icon.png" alt="An icon of a male clicking on the cross for canceling." class="img-fluid mx-auto d-block" />
+                        <p class="text-center fw-bold">Cancel your plan</p>
+                        <p class="text-center">Please note: Members who received Service and wish to cancel prior to the renewal date must pay for any services incurred during that service year.</p>
+                        <button class="btn-primary btn text-uppercase mx-auto d-block">Cancel plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

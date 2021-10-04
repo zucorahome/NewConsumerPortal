@@ -152,7 +152,9 @@ h6 {
     background-color: $zucoraPurple;
 }
 
-
+.white-background{
+    background-color:white;
+}
 .login-background {
     background-color: #F8FBFD;
 }
@@ -198,6 +200,7 @@ h6 {
 
 .hero-background{
     @include background-image("first-hero-image");
+    background-position:center center;
 }
 
 .profile-infoContainer{
@@ -228,13 +231,11 @@ h6 {
             transition: all 0.3s ease-in-out;
             -ms-transition: all 0.3s ease-in-out;
             -oz-transition: all 0.3s ease-in-out;
-            color: $zucoraPurple;
+            color: white;
+            text-decoration:none;
         }
     }
 }
-
-
-
 
 /*My plans page*/
 .furniture-planContainer {
@@ -251,3 +252,4 @@ h6 {
     /*background-color:rgba(254,185,166,0.65);*/
     background-color: #FFFEDF;
 }
+
