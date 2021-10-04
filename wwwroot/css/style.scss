@@ -169,6 +169,15 @@ h6 {
     }
 }
 
+.btn-secondary{
+    background-color:$darkGrey;
+    color:white;
+    border-color:$darkGrey;
+
+    &:hover{
+        
+    }
+}
 
 /*Login page styling*/
 .login-imageBackground{
@@ -183,4 +192,62 @@ h6 {
 
 .createAccount-successIcon{
     width:50%;
+}
+
+/*Secondary navigation part*/
+
+.hero-background{
+    @include background-image("first-hero-image");
+}
+
+.profile-infoContainer{
+    width:100%;
+    background-color:white;
+}
+
+.profile-iconContainer{
+    > img{
+        margin-top:-4em;
+    }
+}
+
+.custom-navTabs {
+    border-bottom: 1px solid rgba(189, 196, 201, 0.4);
+
+    .nav-link {
+        color: #828A8F;
+        font-weight: 700;
+
+        &.active {
+            color: $zucoraPurple;
+            text-decoration: underline;
+        }
+
+        &:hover {
+            background-color: $lilacPurple;
+            transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -oz-transition: all 0.3s ease-in-out;
+            color: $zucoraPurple;
+        }
+    }
+}
+
+
+
+
+/*My plans page*/
+.furniture-planContainer {
+    /* background-color: rgba(163,172,255,0.65);*/
+    background-color: #E7EBFD;
+}
+
+.applaince-planContainer {
+    /* background-color: rgba(112,233,178,0.65);*/
+    background-color: #EAFCFF;
+}
+
+.homeSystems-planContainer {
+    /*background-color:rgba(254,185,166,0.65);*/
+    background-color: #FFFEDF;
 }
