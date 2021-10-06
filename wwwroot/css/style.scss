@@ -11,6 +11,7 @@ $zucoraGreen: #70E9B2;
 $concreteGrey: #C8C8C8;
 $zucoraCoral: #FEB9A6;
 $hbfsBlue: #2BAAE1;
+$customGrey: #828A8F;
 
 $para-fonts: "Aktiv-Grostek", arial, sans-serif;
 $heading-fonts: "Publico Headline", sans-serif;
@@ -111,6 +112,23 @@ h5 {
 h6 {
     font-size: 1.15em;
 }
+
+.fs-14{
+    font-size:0.875em;
+}
+
+.fs-12{
+    font-size:0.75em;
+}
+
+.fs-18{
+    font-size:1.15em;
+}
+
+.fs-20{
+    font-size:1.25em;
+}
+
 /*Text classes*/
 
 .paragraph-font {
@@ -135,6 +153,10 @@ h6 {
 
 .white-text {
     color: white !important;
+}
+
+.customGrey-text{
+    color:$customGrey;
 }
 
 /*Mixins*/
@@ -218,7 +240,7 @@ h6 {
     border-bottom: 1px solid rgba(189, 196, 201, 0.4);
 
     .nav-link {
-        color: #828A8F;
+        color: $customGrey;
         font-weight: 700;
 
         &.active {
@@ -253,3 +275,42 @@ h6 {
     background-color: #FFFEDF;
 }
 
+/*Account details forms*/
+
+.information-form {
+
+
+    label {
+        color: $customGrey;
+    }
+}
+
+/* Payment details page*/
+.current-cardDetails {
+    background: linear-gradient(303.44deg, #E7EBFD -5.26%, #E7F4FD 93.85%);
+    display: flex;
+    flex-direction: column;
+}
+
+.add-newCard {
+    border: 2px dotted #454FA1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+
+    .plus-icon {
+        background-color: #E7EBFD;
+        border-radius: 50%;
+        width:100px;
+        height:100px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        a{
+            font-size:3em;
+            margin:0.25em 0 0 0;
+        }
+    }
+}

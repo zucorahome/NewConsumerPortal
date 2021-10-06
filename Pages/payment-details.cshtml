@@ -1,0 +1,146 @@
+﻿@page
+@model New_ConsumerPortal.Pages.payment_detailsModel
+@{
+    ViewData["Title"] = "Payment Details";
+}
+
+<section class="row g-0 mb-4">
+    <h1 class="d-none">Secondary navigation with portal pages</h1>
+    <!--hero image-->
+    <div class="col-12 hero-background">
+        <img src="~/images/consumer-portal/first-hero-image.jpg" alt="An empty living room with blue sofa and plants on the table at left side." class="img-fluid invisible" />
+    </div>
+    <!--Profile info-->
+    <div class="profile-infoContainer">
+        <div class="profile-iconContainer d-flex justify-content-center">
+            <img src="./images/consumer-portal/user-image-spacey.png" alt="An icon of a user icon in purple color with light background in circle shape." class="img-fluid" />
+        </div>
+        <div class="profile-textContainer row">
+            <div class="col-12 col-lg-6 offset-lg-3">
+                <h1 class="text-center fw-light">Hello, <span class="purple-text">Name!</span></h1>
+                <p class="text-center">ID <span class="fw-bold">1234567</span></p>
+                <p class="text-center w-75 mx-auto">You have successfully created your account. Please check your email for a verification link in order to access your account.</p>
+            </div>
+        </div>
+    </div>
+    <!--Sub menu-->
+    <nav>
+        <ul class="nav justify-content-center custom-navTabs">
+            <li class="nav-item">
+                <a class="nav-link" href="my-plans" aria-current="page">My Plans</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="create-myplans">Create My Plan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="account-details">My Account Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="payment-details">My Payment Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="transactions">My Transactions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gift-cards">My Gift Cards</a>
+            </li>
+        </ul>
+    </nav>
+</section>
+<!--page content-->
+<section class="container g-0">
+    <div class="row align-items-center">
+        <!--Payment card section-->
+        <div class="col-12 my-3">
+        <h3 class="fw-light">My Payment details</h3>
+        <div class="row">
+            <!--left side-->
+            <div class="col-12 col-lg-6 gy-4">
+                <div class="current-cardDetails p-4 rounded-3">
+                    <div class="d-flex justify-content-end">
+                        <img src="./images/consumer-portal/visa-icon.png" alt="Visa card logo." class="img-fluid" />
+                    </div>
+                    <div>
+                        <p class="customGrey-text text-uppercase mb-0 fs-14">Card number</p>
+                        <h5 class="paragraph-font">1234 &#42;&#42;&#42;&#42; &#42;&#42;&#42;&#42; 7896</h5>
+                    </div>
+                    <div class="d-flex justify-content-between my-2">
+                        <!--expiry date-->
+                        <div class="">
+                            <p class="text-uppercase customGrey-text fs-14">Expiry Date</p>
+                            <h5 class="paragraph-font">mm/dd/yyyy</h5>
+                        </div>
+                        <!--name on the card-->
+                        <div class="">
+                            <p class="text-uppercase customGrey-text fs-14">Name on card</p>
+                            <h5 class="paragraph-font">John Doe</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--right side-->
+            <div class="col-12 col-lg-6 gy-4">
+                <div class="add-newCard rounded-3 p-4">
+                    <div class="plus-icon rounded-circle">
+                        <a href="javascript:void(0)" class="paragraph-font purple-text text-decoration-none">&#43;</a>
+                    </div>
+                    <p class="text-center fw-bold text-capitalize mt-4">Add payment details</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--Billing Address info-->
+        <div class="col-12">
+            <h3 class="fw-light">My Billing Address</h3>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="information-form my-3">
+                            <div class="mb-3 flex-column d-flex">
+                                <label class="form-label text-uppercase fw-bold" for="">Address line 1</label>
+                                <input type="text" name="address-line-one" value="" class="form-control-lg form-control" placeholder="" />
+                            </div>
+                            <div class="mb-3 flex-column d-flex">
+                                <label class="form-label text-uppercase fw-bold" for="">Address Line 2</label>
+                                <input type="text" name="address-line-two" value="" class="form-control-lg form-control" placeholder="" />
+                            </div>
+                            <div class="mb-3 flex-column d-flex">
+                                <label class="form-label text-uppercase fw-bold" for="">City</label>
+                                <input type="text" name="city" value="" class="form-control-lg form-control" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-12 col-lg-6">
+                    <div class="information-form my-3">
+                            <div class="d-flex flex-column">
+                                <label for="" class="form-label text-uppercase fw-bold">Province</label>
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
+                                    <option selected>Province</option>
+                                    <option value="1">Alberta</option>
+                                    <option value="2">British Columbia</option>
+                                    <option value="3">Manitoba</option>
+                                    <option value="4">New Brunswick</option>
+                                    <option value="5">Newfoundland and Labrador</option>
+                                    <option value="12">Northwest Territories</option>
+                                    <option value="6">Nova Scotia</option>
+                                    <option value="7">Nunavut</option>
+                                    <option value="8">Ontario</option>
+                                    <option value="9">Prince Edward Island</option>
+                                    <option value="10">Québec</option>
+                                    <option value="11">Saskatchewan</option>
+                                    <option value="13">Yukon</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3 flex-column d-flex">
+                                <label class="form-label text-uppercase fw-bold" for="">Postal Code</label>
+                                <input type="text" name="text" value="" class="form-control-lg form-control" placeholder="" />
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
