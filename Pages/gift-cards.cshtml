@@ -1,4 +1,91 @@
 ﻿@page
 @model New_ConsumerPortal.Pages.gift_cardsModel
 @{
+    ViewData["Title"] = "Gift Cards";
 }
+
+<section class="row g-0 mb-4">
+    <h1 class="d-none">Secondary navigation with portal pages</h1>
+    <!--hero image-->
+    <div class="col-12 hero-background">
+        <img src="~/images/consumer-portal/first-hero-image.jpg" alt="An empty living room with blue sofa and plants on the table at left side." class="img-fluid invisible" />
+    </div>
+    <!--Profile info-->
+    <div class="profile-infoContainer">
+        <div class="profile-iconContainer d-flex justify-content-center">
+            <img src="./images/consumer-portal/user-image-spacey.png" alt="An icon of a user icon in purple color with light background in circle shape." class="img-fluid" />
+        </div>
+        <div class="profile-textContainer row">
+            <div class="col-12 col-lg-6 offset-lg-3">
+                <h1 class="text-center fw-light">Hello, <span class="purple-text">Name!</span></h1>
+                <p class="text-center">ID <span class="fw-bold">1234567</span></p>
+                <p class="text-center w-75 mx-auto">You have successfully created your account. Please check your email for a verification link in order to access your account.</p>
+            </div>
+        </div>
+    </div>
+    <!--Sub menu-->
+    <nav>
+        <ul class="nav justify-content-center custom-navTabs">
+            <li class="nav-item">
+                <a class="nav-link" href="my-plans" aria-current="page">My Plans</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="create-myplans">Create My Plan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="account-details">My Account Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="payment-details">My Payment Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="transactions">My Transactions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="gift-cards">My Gift Cards</a>
+            </li>
+        </ul>
+    </nav>
+</section>
+<!--page content-->
+<section class="container g-0">
+    <div class="row">
+        <h3 class="fw-light">My Gift Cards</h3>
+        <div class="col-12 col-md-6 my-3 g-3">
+            <div class="rounded-3 p-4 d-flex flex-column newLightPurple-background">
+                <p class="h5 text-capitalize my-3">Smarter living gift card</p>
+                <div class="d-flex justify-content-between align-items-center my-3">
+                    <div class="">
+                        <p class="text-uppercase customGrey-text fs-14 fw-bold mb-0">Balance</p>
+                        <p class="">$599</p>
+                    </div>
+                    <div>
+                        <p class="text-uppercase customGrey-text fs-14 fw-bold mb-0">Issue Date</p>
+                        <p class="">mm/dd/yyyy</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center my-3">
+                    <button class="btn btn-primary w-75 text-uppercase">Resend my giftcard</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 my-3 g-3">
+            <div class="rounded-3 p-4 d-flex flex-column newLightGreen-background">
+                <p class="h5 text-capitalize my-3">Smarter living gift card</p>
+                <div class="d-flex justify-content-between align-items-center my-3">
+                    <div class="">
+                        <p class="text-uppercase customGrey-text fs-14 fw-bold mb-0">Balance</p>
+                        <p class="">$0</p>
+                    </div>
+                    <div>
+                        <p class="text-uppercase customGrey-text fs-14 fw-bold mb-0">Issue Date</p>
+                        <p class="">05/05/2020</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center my-3">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

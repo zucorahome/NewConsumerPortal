@@ -11,6 +11,10 @@ $zucoraGreen: #70E9B2;
 $concreteGrey: #C8C8C8;
 $zucoraCoral: #FEB9A6;
 $hbfsBlue: #2BAAE1;
+
+/*new colours*/
+$customGreen: #EAFCFF;
+$customLightPurple: #E7EBFD;
 $customGrey: #828A8F;
 
 $para-fonts: "Aktiv-Grostek", arial, sans-serif;
@@ -181,6 +185,14 @@ h6 {
     background-color: #F8FBFD;
 }
 
+.newLightPurple-background{
+    background-color: $customLightPurple;
+}
+
+.newLightGreen-background{
+    background-color: $customGreen;
+}
+
 /*Bootstrap class changes*/
 
 .btn-primary{
@@ -201,6 +213,10 @@ h6 {
     &:hover{
         
     }
+}
+
+.rounded-3{
+    border-radius:.75rem !important;
 }
 
 /*Login page styling*/

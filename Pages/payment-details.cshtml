@@ -67,12 +67,12 @@
                     <div class="d-flex justify-content-between my-2">
                         <!--expiry date-->
                         <div class="">
-                            <p class="text-uppercase customGrey-text fs-14">Expiry Date</p>
+                            <p class="text-uppercase customGrey-text fs-14 mb-0">Expiry Date</p>
                             <h5 class="paragraph-font">mm/dd/yyyy</h5>
                         </div>
                         <!--name on the card-->
                         <div class="">
-                            <p class="text-uppercase customGrey-text fs-14">Name on card</p>
+                            <p class="text-uppercase customGrey-text fs-14 mb-0">Name on card</p>
                             <h5 class="paragraph-font">John Doe</h5>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
             <div class="col-12 col-lg-6 gy-4">
                 <div class="add-newCard rounded-3 p-4">
                     <div class="plus-icon rounded-circle">
-                        <a href="javascript:void(0)" class="paragraph-font purple-text text-decoration-none">&#43;</a>
+                        <a href="javascript:void(0)" class="paragraph-font purple-text text-decoration-none" data-bs-toggle="modal" data-bs-target="#addPaymentDetails">&#43;</a>
                     </div>
                     <p class="text-center fw-bold text-capitalize mt-4">Add payment details</p>
                 </div>
@@ -91,29 +91,20 @@
         </div>
         <!--Billing Address info-->
         <div class="col-12">
-            <h3 class="fw-light">My Billing Address</h3>
+            <div class="w-100 d-flex justify-content-start align-items-center">
+                <h3 class="fw-light">My Billing Address</h3>
+                <a href="#" class="text-uppercase text-decoration-underline fw-bold mx-4 mt-3 h5 purple-text">Edit</a>
+            </div>
             <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="information-form my-3">
-                            <div class="mb-3 flex-column d-flex">
+                    <div class="information-form my-3 col-12">
+                        <div class="row g-3">
+                            <div class="mb-3 flex-column d-flex col-12 col-md-6">
                                 <label class="form-label text-uppercase fw-bold" for="">Address line 1</label>
                                 <input type="text" name="address-line-one" value="" class="form-control-lg form-control" placeholder="" />
                             </div>
-                            <div class="mb-3 flex-column d-flex">
-                                <label class="form-label text-uppercase fw-bold" for="">Address Line 2</label>
-                                <input type="text" name="address-line-two" value="" class="form-control-lg form-control" placeholder="" />
-                            </div>
-                            <div class="mb-3 flex-column d-flex">
-                                <label class="form-label text-uppercase fw-bold" for="">City</label>
-                                <input type="text" name="city" value="" class="form-control-lg form-control" placeholder="" />
-                            </div>
-                        </div>
-                    </div>
-                <div class="col-12 col-lg-6">
-                    <div class="information-form my-3">
-                            <div class="d-flex flex-column">
+                            <div class="d-flex flex-column col-12 col-md-6 mb-3">
                                 <label for="" class="form-label text-uppercase fw-bold">Province</label>
-                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
+                                <select class="form-select form-select-lg" aria-label=".form-select-lg">
                                     <option selected>Province</option>
                                     <option value="1">Alberta</option>
                                     <option value="2">British Columbia</option>
@@ -130,13 +121,27 @@
                                     <option value="13">Yukon</option>
                                 </select>
                             </div>
-
-                            <div class="mb-3 flex-column d-flex">
+                        </div>
+                        <div class="row g-3">
+                            <div class="mb-3 flex-column d-flex col-12 col-md-6">
+                                <label class="form-label text-uppercase fw-bold" for="">Address Line 2</label>
+                                <input type="text" name="address-line-two" value="" class="form-control-lg form-control" placeholder="" />
+                            </div>
+                            <div class="mb-3 flex-column d-flex col-12 col-md-6">
                                 <label class="form-label text-uppercase fw-bold" for="">Postal Code</label>
                                 <input type="text" name="text" value="" class="form-control-lg form-control" placeholder="" />
                             </div>
-                            <div>
+                        </div>
+                        <div class="row g-3 align-items-center">
+                            <div class="mb-3 flex-column d-flex col-12 col-md-6">
+                                <label class="form-label text-uppercase fw-bold" for="">City</label>
+                                <input type="text" name="city" value="" class="form-control-lg form-control" placeholder="" />
+                            </div>
 
+                            <div class="d-flex justify-content-between align-items-center col-12 col-md-6 mt-4">
+                                
+                                <a href="#" class="btn btn-primary w-25" role="button">Save</a>
+                                <a href="#" class="btn btn-secondary w-25" role="button">Cancel</a>
                             </div>
                         </div>
                     </div>
@@ -144,3 +149,72 @@
         </div>
     </div>
 </section>
+<!--Modal Form-->
+<div class="modal fade" tabindex="-1" id="addPaymentDetails" aria-labelledby="addPaymentDetailsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title text-capitalize" id="addPaymentDetailsLabel">Add payment details</h3>
+                <button type="button" class="btn-close justify-content-end" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-center flex-column p-4">
+               <!--form-->
+                <div class="my-3">
+                    <div class="mb-3">
+                        <input type="text" name="card-name" value="" class="form-control form-control-lg" placeholder="Name on card" />
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" name="card-name" value="" class="form-control form-control-lg" placeholder="Card number" maxlength="19" />
+                    </div>
+                    <div class="mb-3 row g-3">
+                        <div class="col">
+                            <input type="text" name="expiry-card-date" value="" class="form-control form-control-lg" placeholder="Expiry date mm/yy" maxlength="7" />
+                        </div>
+                        <div class="col">
+                            <input type="password" name="card-cvv" value="" class="form-control form-control-lg" placeholder="CVV" maxlength="3" />
+                        </div>
+                    </div>
+                    <div class="my-3">
+                        <div class="form-check">
+                            <input type="checkbox" name="use-billing-address" value="" class="form-check-input"/>
+                            <label class="form-check-label text-capitalize" for="use-billing-address">Use existing billing address</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" name="billing-address" value="" class="form-control form-control-lg" placeholder="Billing address"/>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" name="billing-city" value="" class="form-control form-control-lg" placeholder="City"/>
+                    </div>
+                    <div class="mb-3 row g-3">
+                        <div class="col">
+                            <select class="form-select form-select-lg" aria-label=".form-select-lg">
+                                <option selected>Province</option>
+                                <option value="1">Alberta</option>
+                                <option value="2">British Columbia</option>
+                                <option value="3">Manitoba</option>
+                                <option value="4">New Brunswick</option>
+                                <option value="5">Newfoundland and Labrador</option>
+                                <option value="12">Northwest Territories</option>
+                                <option value="6">Nova Scotia</option>
+                                <option value="7">Nunavut</option>
+                                <option value="8">Ontario</option>
+                                <option value="9">Prince Edward Island</option>
+                                <option value="10">Québec</option>
+                                <option value="11">Saskatchewan</option>
+                                <option value="13">Yukon</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input type="text" name="billing-postalCode" value="" class="form-control-lg form-control" placeholder="Postal code" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-between align-items-center">
+                <button type="submit" class="btn btn-primary text-uppercase w-25">Save</button>
+                <button type="button" class="btn btn-primary text-uppercase w-25" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
