@@ -291,10 +291,13 @@ h6 {
     background-color: #FFFEDF;
 }
 
+.dotted-border {
+    border-top: 1px dotted $darkGrey;
+}
+
 /*Account details forms*/
 
 .information-form {
-
 
     label {
         color: $customGrey;
@@ -306,6 +309,7 @@ h6 {
     background: linear-gradient(303.44deg, #E7EBFD -5.26%, #E7F4FD 93.85%);
     display: flex;
     flex-direction: column;
+    min-height:220px;
 }
 
 .add-newCard {
@@ -314,7 +318,7 @@ h6 {
     justify-content: center;
     align-items: center;
     flex-direction:column;
-
+    min-height:220px;
     .plus-icon {
         background-color: #E7EBFD;
         border-radius: 50%;
@@ -327,6 +331,66 @@ h6 {
         a{
             font-size:3em;
             margin:0.25em 0 0 0;
+        }
+    }
+}
+
+/*Gift card*/
+
+.minHeight270{
+    min-height:270px;
+}
+
+/* Transactions page*/
+.search-padding{
+    padding:0.5rem 2rem;
+}
+
+/*Table*/
+
+.transaction-table {
+    border-collapse: collapse;
+
+    thead > tr > th {
+        padding: 1rem;
+    }
+
+    tbody > tr:nth-child(odd) {
+        background-color: #F8FBFD;
+    }
+
+    tbody > tr > td {
+        color: $darkGrey;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .transaction-table {
+        thead {
+            border: none;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            margin: -1px;
+            padding: 0;
+            position: absolute;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid $lightGrey;
+        }
+
+        td {
+            text-align: right;
+            display: block;
+
+            &:before {
+                content: attr(data-label);
+                float: left;
+                color: $zucoraPurple;
+                font-weight: 600;
+            }
         }
     }
 }
