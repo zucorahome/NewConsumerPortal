@@ -1,0 +1,82 @@
+﻿@page
+@model New_ConsumerPortal.Pages.MarketPartner.plan_registrationModel
+@{
+    ViewData["Title"] = "Plan Registration";
+}
+<div class="row g-md-0 login-background">
+    <!--left side image-->
+    <div class="col-12 col-lg-6 plan-registrationBackground">
+        <div class="">
+            <img src="~/images/market-portal/plan-registration-2.jpg" alt="An image of two female explaining the SPS Plan." class="img-fluid invisible" />
+        </div>
+    </div>
+    <!--right side form-->
+    <div class="col-12 col-lg-6 p-2 p-md-5">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="fw-light purple-text">Plan Registration</h1>
+            <a href="#" class="custom-redText text-uppercase text-decoration-none">Clear the data<i class="fas fa-eraser mx-1"></i></a>
+        </div>
+        <div class="plan-registration-form">
+            <div class="row g-3">
+                <div class="col-12 col-lg-6 mb-3">
+                    <label class="form-label fw-bold">Location<span class="custom-redText mx-1">*</span></label>
+                    <select class="form-select form-control-lg" required>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                    <label class="form-label fw-bold">Sale Date<span class="custom-redText mx-1">*</span></label>
+                    <input type="date" name="name" value="" class="form-control form-control-lg" required/>
+                </div>
+                <!---->
+                <div class="col-12 col-lg-6 mb-3">
+                    <label class="form-label fw-bold">Order/Invitation Ref<span class="custom-redText mx-1">*</span></label>
+                    <input type="text" name="name" value="" class="form-control form-control-lg" required/>
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                    <label class="form-label fw-bold">Est.Last Delivery Date<span class="custom-redText mx-1">*</span> <i class="far fa-question-circle customGrey-text mx-1"></i></label>
+                    <input type="date" name="name" value="" class="form-control form-control-lg" required/>
+                </div>
+                <!---->
+                <div class="col-12 col-lg-6 mb-3">
+                    <label class="form-label fw-bold">First Name<span class="custom-redText mx-1">*</span></label>
+                    <input type="text" name="name" value="" class="form-control form-control-lg" required/>
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                    <label class="form-label fw-bold">Last Name<span class="custom-redText mx-1">*</span></label>
+                    <input type="text" name="name" value="" class="form-control form-control-lg" required/>
+                </div>
+                <!---->
+                <div class="col-12 col-lg-6 mb-3">
+                    <label class="form-label fw-bold">Email <span class="custom-redText mx-1">*</span></label>
+                    <input type="email" name="name" value="" class="form-control form-control-lg" required/>
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                    <label class="form-label fw-bold">Phone<span class="custom-redText mx-1">*</span></label>
+                    <input type="tel" name="name" value="" class="form-control form-control-lg"  required/>
+                </div>
+                <!---->
+                <div class="col-12 col-lg-6 mb-3">
+                    <label class="form-label fw-bold">Rate Card<span class="custom-redText mx-1">*</span></label>
+                    <select class="form-select form-control-lg" required>
+                        <option value=" ">Select Rate Card</option>
+                    </select>
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                    <label class="form-label fw-bold">SKU <span class="custom-redText mx-1">*</span></label>
+                    <select class="form-select form-control-lg" required>
+                        <option value=" ">SKU Description</option>
+                    </select>
+                </div>
+                <!--Buttons-->
+                <div class="col-12 col-lg-6 mb-3 d-flex justify-content-center">
+                    <a href="#" class="purple-border p-3 rounded-pill text-uppercase purple-text fw-bold" role="button">Plan registration how-to</a>
+                </div>
+                <div class="col-12 col-lg-6 mb-3 d-flex justify-content-center">
+                    <button class="btn btn-primary text-uppercase rounded-pill fw-bold w-50">Add plan +</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

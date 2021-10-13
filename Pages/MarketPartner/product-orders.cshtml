@@ -1,0 +1,158 @@
+﻿@page
+@model New_ConsumerPortal.Pages.MarketPartner.product_ordersModel
+@{
+    ViewData["Title"] = "Product Orders";
+}
+<section class="container-fluid p-4 login-background">
+    <!--first row-->
+    <div class="row d-flex flex-column-reverse flex-lg-row g-4">
+        <div class="col-12 col-lg-8 gx-0 gx-lg-4">
+            <div class="d-flex justify-content-between align-items-center w-100 px-3">
+                <h1 class="h3 paragraph-font fw-bold">Product Orders</h1>
+                <a href="#" class="text-uppercase purple-text fw-bold text-decoration-none">View all<i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="w-100 white-background p-3 rounded-2">
+                <table class="table custom-table table-borderless">
+                    <thead>
+                        <tr class="login-background">
+                            <td scope="col" class="customGrey-text text-uppercase fw-bold">Date</td>
+                            <td scope="col" class="customGrey-text text-uppercase fw-bold">Po ref</td>
+                            <td scope="col" class="customGrey-text text-uppercase fw-bold">Units</td>
+                            <td scope="col" class="customGrey-text text-uppercase fw-bold">Value</td>
+                            <td scope="col" class="customGrey-text text-uppercase fw-bold">Market Partner</td>
+                            <td scope="col" class="customGrey-text text-uppercase fw-bold">Status</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="align-middle">
+                            <td scope="row" class="" data-label="Date & Time"><i class="far fa-calendar-alt customGrey-text mx-1"></i>05/05/2025 | <i class="far fa-clock mx-1 customGrey-text"></i>2.21 PM </td>
+                            <td scope="row" class="" data-label="PO REF">Email - Jenny</td>
+                            <td scope="row" class="" data-label="Units">#123456</td>
+                            <td scope="row" class="" data-label="Value">$1000</td>
+                            <td scope="row" class="" data-label="Market Partner">Market Partner</td>
+                            <td scope="row" class="" data-label="Status"><p class="status-completed text-center mb-3 mb-lg-0"><i class="fas fa-check mx-1"></i>Completed</p></td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td scope="row" class="" data-label="Date & Time"><i class="far fa-calendar-alt customGrey-text mx-1"></i>05/05/2025 | <i class="far fa-clock mx-1 customGrey-text"></i>2.21 PM</td>
+                            <td scope="row" class="" data-label="PO REF">Email - Jenny</td>
+                            <td scope="row" class="" data-label="Units">#123456</td>
+                            <td scope="row" class="" data-label="Value">$1000</td>
+                            <td scope="row" class="" data-label="Market Partner">Market Partner</td>
+                            <td scope="row" class="" data-label="Status"><p class="status-inprogress text-center mb-3 mb-lg-0"><i class="fas fa-sync mx-1"></i>In progress</p></td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td scope="row" class="" data-label="Date & Time"><i class="far fa-calendar-alt customGrey-text mx-1"></i>05/05/2025 | <i class="far fa-clock mx-1 customGrey-text"></i>2.21 PM</td>
+                            <td scope="row" class="" data-label="PO REF">Email - Jenny</td>
+                            <td scope="row" class="" data-label="Units">#123456</td>
+                            <td scope="row" class="" data-label="Value">$1000</td>
+                            <td scope="row" class="" data-label="Market Partner">Market Partner</td>
+                            <td scope="row" class="" data-label="Status"><p class="status-canceled text-center mb-3 mb-lg-0"><i class="fas fa-times mx-1"></i>Cancelled</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--image right side-->
+        <div class="col-12 col-lg-4">
+            <div class="productOrders-image h-100 rounded-2">
+                <div class="overlay-textContainer rounded-2">
+                    <div class="d-flex justify-content-around align-items-center overlay-text flex-column flex-lg-row p-3">
+                        <h4 class="white-text fw-light">Are you growing your business?</h4>
+                        <a class="btn btn-primary rounded-pill text-uppercase fs-14" role="button" href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Below row-->
+    <div class="row my-3">
+        <div class="col-12 col-lg-6 col-xxl-4 gx-0 gx-lg-4 my-3">
+            <div class="d-flex justify-content-between align-items-center w-100 px-3">
+                <h4 class="paragraph-font fw-bold">Product Protection Plans</h4>
+                <a href="#" class="text-uppercase purple-text fw-bold text-decoration-none">View all<i class="fas fa-chevron-right mx-1"></i></a>
+            </div>
+            <div class="w-100 white-background p-3 rounded-2">
+                <table class="table custom-table table-borderless table-responsive-lg">
+                    <thead>
+                        <tr class="login-background">
+                            <td scope="col" class="customGrey-text text-uppercase fw-bold">Invoice #</td>
+                            <td scope="col" class="customGrey-text text-uppercase fw-bold">Amount</td>
+                            <td scope="col" class="customGrey-text text-uppercase fw-bold">Status</td>
+                            <td scope="col" class="customGrey-text text-uppercase fw-bold">Invoice date</td>
+                            <td scope="col" class="customGrey-text text-uppercase fw-bold">Payment Date</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="align-middle">
+                            <td scope="row" class="" data-label="Invoice #">123456789</td>
+                            <td scope="row" class="" data-label="Amount">$129.99</td>
+                            <td scope="row" class="lillacPurple-text" data-label="Status">Paid</td>
+                            <td scope="row" class="" data-label="Invoice Date"><i class="far fa-calendar-alt customGrey-text mx-1"></i>05/05/2021</td>
+                            <td scope="row" class="" data-label="Payment Date"><i class="far fa-calendar-alt customGrey-text mx-1"></i>05/10/2021</td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td scope="row" class="" data-label="Invoice #">123456789</td>
+                            <td scope="row" class="" data-label="Amount">$129.99</td>
+                            <td scope="row" class="custom-redText" data-label="Status">Unpaid</td>
+                            <td scope="row" class="" data-label="Invoice Date"><i class="far fa-calendar-alt customGrey-text mx-1"></i>05/05/2021</td>
+                            <td scope="row" class="" data-label="Payment Date"><i class="far fa-calendar-alt customGrey-text mx-1"></i>05/10/2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xxl-4 gx-0 gx-lg-4 my-3">
+            <div class="d-flex justify-content-between align-items-center w-100 px-3">
+                <h4 class="paragraph-font fw-bold">Statement of Account</h4>
+                <a href="#" class="text-uppercase purple-text fw-bold text-decoration-none">View all<i class="fas fa-chevron-right mx-1"></i></a>
+            </div>
+            <div class="w-100 white-background p-3 rounded-2">
+                <table class="table custom-table table-borderless table-responsive-lg">
+                    <thead>
+                        <tr class="login-background">
+                            <td scope="col" class="customGrey-text text-uppercase fw-bold">Trx date</td>
+                            <td scope="col" class="customGrey-text text-uppercase fw-bold">Trx</td>
+                            <td scope="col" class="customGrey-text text-uppercase fw-bold">Due date</td>
+                            <td scope="col" class="customGrey-text text-uppercase fw-bold">Amount</td>
+                            <td scope="col" class="customGrey-text text-uppercase fw-bold">Balance</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="align-middle">
+                            <td scope="row" class="" data-label="TRX Date"><i class="far fa-calendar-alt customGrey-text mx-1"></i>05/05/2021</td>
+                            <td scope="row" class="" data-label="TRX">INV Z1234</td>
+                            <td scope="row" class="" data-label="Due Date"><i class="far fa-calendar-alt customGrey-text mx-1"></i>05/10/2021</td>
+                            <td scope="row" class="custom-redText" data-label="Amount">-$2134.6</td>
+                            <td scope="row" class="" data-label="Balance">0.00</td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td scope="row" class="" data-label="TRX Date"><i class="far fa-calendar-alt customGrey-text mx-1"></i>05/05/2021</td>
+                            <td scope="row" class="" data-label="TRX">Payment</td>
+                            <td scope="row" class="" data-label="Due Date">Null</td>
+                            <td scope="row" class="" data-label="Amount">$1134.6</td>
+                            <td scope="row" class="" data-label="Balance">$1134.6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xxl-4 gx-0 gx-lg-4">
+            <div class="d-flex justify-content-between align-items-center w-100 px-3">
+                <h4 class="paragraph-font fw-bold">Smarter Living Plan Statistics</h4>
+                <a href="#" class="text-uppercase purple-text fw-bold text-decoration-none">View all<i class="fas fa-chevron-right mx-1"></i></a>
+            </div>
+            <div class="w-100 white-background p-3 d-flex flex-column">
+                <div class="login-background d-flex justify-content-between align-items-center p-2 mb-2">
+                    <h2 class="p-2 border-end mb-0">20</h2>
+                    <p class="p-2 customGrey-text mb-0">New Members added this Month</p>
+                    <p class="lillacPurple-text p-2 h2 mb-0"><i class="fas fa-user-plus"></i></p>
+                </div>
+                <div class="login-background d-flex justify-content-between align-items-center mt-2 p-2">
+                    <h2 class="p-2 border-end mb-0">99</h2>
+                    <p class="p-2 customGrey-text mb-0">Total number of Active Members</p>
+                    <p class="lillacPurple-text p-2 h2 mb-0"><i class="fas fa-users"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -163,15 +163,29 @@ h6 {
     color:$customGrey;
 }
 
+.custom-redText {
+    color: #FF9393;
+}
+
+.lillacPurple-text{
+    color:$lilacPurple;
+}
+
 /*Mixins*/
 
-@mixin background-image($image) {
-        background-image: url("../images/consumer-portal/#{$image}.jpg");
+@mixin background-image($folder,$image) {
+        background-image: url("../images/#{$folder}/#{$image}");
         background-position: top center;
         background-size: cover;
         background-repeat: no-repeat;
 }
 
+@mixin status-button($colour) {
+    color: $colour;
+    border: 1px solid $colour;
+    border-radius: 30px;
+    padding: 7px;
+}
 
 /*Background classes*/
 .purple-background {
@@ -221,11 +235,11 @@ h6 {
 
 /*Login page styling*/
 .login-imageBackground{
-   @include background-image("login-page");
+   @include background-image("consumer-portal","login-page.jpg");
 }
 
 .account-imageBackground{
-    @include background-image("account-page-image");
+    @include background-image("consumer-portal","account-page-image.jpg");
 }
 
 /*Creat account styling*/
@@ -237,7 +251,7 @@ h6 {
 /*Secondary navigation part*/
 
 .hero-background{
-    @include background-image("first-hero-image");
+    @include background-image("consumer-portal","first-hero-image.jpg");
     background-position:center center;
 }
 
@@ -365,8 +379,8 @@ h6 {
     }
 }
 
-@media screen and (max-width:1024px){
-    .transaction-table {
+@media screen and (max-width:1023px){
+    .transaction-table, .custom-table {
         thead {
             border: none;
             width: 1px;
@@ -393,4 +407,68 @@ h6 {
             }
         }
     }
+}
+
+/*----------------------------------------------Market Portal-------------------------------------*/
+
+/*Product Order page*/
+
+.productOrders-image{
+    @include background-image("market-portal","product-order-image.png"); 
+}
+
+.overlay-textContainer{
+    background:rgba(0,0,0,0.35);
+    //height:300px;
+    height:100%;
+}
+.overlay-text {
+    position: relative;
+    top: 60%;
+}
+
+.status-completed {
+    @include status-button(#4AC58A);
+    background: rgba(169, 255, 214, 0.2);
+}
+
+.status-inprogress {
+    @include status-button($lilacPurple);
+    background: rgba(163, 172, 255, 0.1);
+}
+
+.status-canceled {
+    @include status-button(#FF9393);
+    background: rgba(255, 147, 147, 0.1);
+}
+
+@media screen and (max-width:1024px){
+    .overlay-text {
+        position: relative;
+        top: 50%;
+        text-align:center;
+    }
+
+    .status-completed, .status-inprogress, .status-canceled{
+        float:right;
+    }
+
+}
+
+@media screen and (min-width:1025px){
+   
+}
+
+.custom-dropshadow{
+
+}
+
+
+/*Plan Registration*/
+.plan-registrationBackground{
+    @include background-image("market-portal","plan-registration-2.jpg");
+}
+
+.purple-border{
+    border:1px solid $zucoraPurple;
 }
