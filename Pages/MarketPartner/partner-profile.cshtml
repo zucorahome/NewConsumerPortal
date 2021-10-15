@@ -1,4 +1,231 @@
 ﻿@page
 @model New_ConsumerPortal.Pages.MarketPartner.partner_profileModel
 @{
+    ViewData["Title"] = "Plan Registration";
 }
+
+<div class="row login-background p-1 p-md-3 p-lg-5 align-items-center">
+    <!--FIRST LEFT SIDE-->
+    <div class="col-12 col-md-6 my-3">
+        <!--text-->
+        <div class="w-100 d-flex justify-content-between align-items-center mb-2">
+            <h1 class="paragraph-font h4 text-capitalize mb-0">Product protection plans</h1>
+            <a href="#" class="text-uppercase purple-text fw-bold text-decoration-none">Edit<i class="fas fa-pencil-alt mx-1 fs-14"></i></a>
+        </div>
+        <!--box table-->
+        <div class="white-background rounded-2 custom-boxshadow p-3 w-100">
+            <div class="row align-items-center justify-content-around">
+                <!--left side image-->
+                <div class="col-3 initalName-background rounded-circle">
+                    <h3 class="text-uppercase lillacPurple-text paragraph-font mb-0 text-center">KB</h3>
+                </div>
+                <!--right side table-->
+                <div class="col-9">
+                    <table class="table custom-table table-borderless">
+                        <thead>
+                            <tr class="align-middle">
+                                <td scope="col" class="purple-text fw-bold">Name</td>
+                                <td scope="col" class="purple-text fw-bold">Lang Pref</td>
+                                <td scope="col" class="purple-text text-uppercase fw-bold">hst/gst #</td>
+                                <td scope="col" class="purple-text fw-bold">Buying Group</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-middle">
+                                <td scope="row" data-label="Name">Kane's Bedding Hur Kane Co.'</td>
+                                <td scope="row" data-label="Lang Pref">English</td>
+                                <td scope="row" data-label="HST/GST #">1234567</td>
+                                <td scope="row" data-label="Buying Group">None</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FIRST RIGHT SIDE-->
+    <div class="col-12 col-md-6 my-3">
+        <!--text-->
+        <div class="w-100 d-flex justify-content-between align-items-center mb-2">
+            <h2 class="paragraph-font h4 text-capitalize mb-0">Payment preferences</h2>
+            <a href="#" class="text-uppercase purple-text fw-bold text-decoration-none">Edit<i class="fas fa-pencil-alt mx-1 fs-14"></i></a>
+        </div>
+        <!--box table-->
+        <div class="white-background rounded-2 custom-boxshadow p-3 w-100">
+            <div class="row align-items-center justify-content-around">
+                <!--left side image-->
+                <div class="col-3 payment-pref-icon rounded-circle">
+                    <p class="text-uppercase paragraph-font mb-0 text-center"><i class="far fa-credit-card"></i></p>
+                </div>
+                <!--right side table-->
+                <div class="col-9">
+                    <table class="table custom-table table-borderless">
+                        <thead>
+                            <tr class="align-middle">
+                                <td scope="col" class="purple-text fw-bold">Comm Earnings</td>
+                                <td scope="col" class="purple-text fw-bold">Plan Registrations</td>
+                                <td scope="col" class="purple-text fw-bold">Prod Purchases</td>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-middle">
+                                <td scope="row" data-label="Comm Earnings">Example</td>
+                                <td scope="row" data-label="Plan Registrations">EFT</td>
+                                <td scope="row" data-label="Prod Purchases">EFT</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SECOND LEFT SIDE-->
+    <div class="col-12 col-md-6 my-3">
+        <!--text-->
+        <div class="w-100 d-flex justify-content-between align-items-center mb-2">
+            <h2 class="paragraph-font h4 text-capitalize mb-0">Billing Address</h2>
+            <a href="#" class="text-uppercase purple-text fw-bold text-decoration-none">Edit<i class="fas fa-pencil-alt mx-1 fs-14"></i></a>
+        </div>
+        <!--box table-->
+        <div class="white-background rounded-2 custom-boxshadow p-3 w-100">
+            <div class="row align-items-center justify-content-around">
+                <!--left side image-->
+                <div class="col-3 map-icon-container rounded-circle">
+                    <p class="text-uppercase paragraph-font mb-0 text-center"><i class="far fa-address-book"></i></p>
+                </div>
+                <!--right side table-->
+                <div class="col-9">
+                    <table class="table custom-table table-borderless">
+                        <thead>
+                            <tr class="align-middle">
+                                <td scope="col" class="purple-text fw-bold">State</td>
+                                <td scope="col" class="purple-text fw-bold">City</td>
+                                <td scope="col" class="purple-text fw-bold">ZIP Code</td>
+                                <td scope="col" class="purple-text fw-bold">Address</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-middle">
+                                <td scope="row" data-label="State">New Jersey</td>
+                                <td scope="row" data-label="City">New York</td>
+                                <td scope="row" data-label="ZIP Code">NY 10011</td>
+                                <td scope="row" data-label="Address">111 8th Avenue</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SECOND RIGHT SIDE-->
+    <div class="col-12 col-md-6 my-3">
+        <!--text-->
+        <div class="w-100 d-flex justify-content-between align-items-center mb-2">
+            <h2 class="paragraph-font h4 text-capitalize mb-0">Banking Details</h2>
+            <a href="#" class="text-uppercase purple-text fw-bold text-decoration-none">Edit<i class="fas fa-pencil-alt mx-1 fs-14"></i></a>
+        </div>
+        <!--box table-->
+        <div class="white-background rounded-2 custom-boxshadow p-3 w-100">
+            <div class="row align-items-center justify-content-around">
+                <!--left side image-->
+                <div class="col-3 banking-icon-container rounded-circle">
+                    <p class="text-uppercase paragraph-font mb-0 text-center"><i class="fas fa-money-check-alt"></i></p>
+                </div>
+                <!--right side table-->
+                <div class="col-9">
+                    <table class="table custom-table table-borderless">
+                        <thead>
+                            <tr class="align-middle">
+                                <td scope="col" class="purple-text fw-bold">Transit #</td>
+                                <td scope="col" class="purple-text fw-bold">Institution #</td>
+                                <td scope="col" class="purple-text fw-bold">Account #</td>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-middle">
+                                <td scope="row" data-label="Transit #">12345</td>
+                                <td scope="row" data-label="Institution #">999</td>
+                                <td scope="row" data-label="Account #">123456789</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--THIRD LEFT SIDE-->
+    <div class="col-12 col-md-6 my-3">
+        <!--text-->
+        <div class="w-100 d-flex justify-content-between align-items-center">
+            <h2 class="paragraph-font h4 text-capitalize">Our location</h2>
+            <a href="#" class="text-uppercase purple-text fw-bold text-decoration-none">Edit<i class="fas fa-pencil-alt fs-14"></i></a>
+        </div>
+        <!--box table-->
+        <div class="white-background rounded-2 custom-boxshadow p-3 w-100">
+            <div class="row align-items-center justify-content-around">
+                <!--left side image-->
+                <div class="col-3 location-icon-container rounded-circle">
+                    <p class="text-uppercase paragraph-font mb-0 text-center"><i class="fas fa-map-marker-alt"></i></p>
+                </div>
+                <!--right side table-->
+                <div class="col-9">
+                    <table class="table custom-table table-borderless">
+                        <thead>
+                            <tr class="align-middle">
+                                <td scope="col" class="purple-text fw-bold">Code</td>
+                                <td scope="col" class="purple-text fw-bold">Location Name</td>
+                                <td scope="col" class="purple-text fw-bold">Address</td>
+                                <td scope="col" class="purple-text fw-bold">Phone</td>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-middle">
+                                <td scope="row" data-label="Code">4564074</td>
+                                <td scope="row" data-label="Location Name">Store 1(2)</td>
+                                <td scope="row" data-label="Address">111 8th Ave</td>
+                                <td scope="row" data-label="Phone">+1 0101010101</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--THIRD RIGHT SIDE-->
+    <div class="col-12 col-md-6 my-3">
+        <!--text-->
+        <div class="w-100 d-flex justify-content-between align-items-center">
+            <h2 class="paragraph-font h4 text-capitalize">Payment methods</h2>
+            <a href="#" class="text-uppercase purple-text fw-bold text-decoration-none">Add new card <i class="fas fa-plus mx-1"></i></a>
+        </div>
+        <!--box table-->
+        <div class="white-background rounded-2 custom-boxshadow p-3 w-100">
+            <div class="row align-items-center justify-content-around gy-4">
+                <!--left side image-->
+                <div class="col-12 col-md-3 paymentMethod-icon rounded-circle">
+                    <p class="text-uppercase paragraph-font mb-0 text-center"><i class="fas fa-wallet"></i></p>
+                </div>
+                <!--right side table-->
+                <div class="col-12 col-md-9">
+                    <div class="border rounded-2 d-flex justify-content-around align-items-center p-2">
+                        <!--icon-->
+                        <div>
+                            <h4 class="mb-0"><i class="far fa-credit-card"></i></h4>
+                        </div>
+                        <!--card number-->
+                        <div>
+                            <p class="card-number-lastFour mb-0">&bull;&bull;&bull;&bull;&nbsp;&bull;&bull;&bull;&bull;&nbsp;&bull;&bull;&bull;&bull;&nbsp;1234</p>
+                        </div>
+                        <!--edit icon-->
+                        <a href="#" class="customGrey-text text-decoration-none"><i class="fas fa-pencil-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

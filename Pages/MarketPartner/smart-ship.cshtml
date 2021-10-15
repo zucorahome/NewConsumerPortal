@@ -1,0 +1,106 @@
+﻿@page
+@model New_ConsumerPortal.Pages.MarketPartner.smart_shipModel
+@{
+    ViewData["Title"] = "Smart Ship";
+}
+<div class="row login-background p-1 p-md-3 p-lg-5">
+    <h1 class="fw-light text-center my-4 purple-text">Smart Ship</h1>
+    <div class="col-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+        <div class="row align-items-center">
+            <!--Lef side-->
+            <div class="col-12 col-lg-6 d-flex flex-column">
+                <!--Customer Details-->
+                <div class="customerDetails-container">
+                    <h3 class="paragraph-font text-capitalize">Customer details</h3>
+                    <!--form-->
+                    <div class="row g-3">
+                        <div class="col-12 col-lg-6">
+                            <label for="first-name" class="form-label fw-bold">First Name</label>
+                            <input type="text" name="first-name" value="" class="form-control form-control-lg" />
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label for="last-name" class="form-label fw-bold">Last Name</label>
+                            <input type="text" name="last-name" value="" class="form-control form-control-lg" />
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label for="" class="form-label fw-bold">Phone Number</label>
+                            <input type="tel" name="phone-number" value="" class="form-control form-control-lg" />
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label for="email" class="form-label fw-bold">Email</label>
+                            <input type="email" name="email" value="" class="form-control form-control-lg" placeholder="example@gmail.com"/>
+                        </div>
+                    </div>
+                </div>
+                <!--Ship to Address-->
+                <div class="shipping-address-container my-3">
+                    <h3 class="paragraph-font text-capitalize">Ship to address</h3>
+                    <!--form-->
+                    <div class="row g-3">
+                        <div class="col-12 col-lg-6">
+                            <label for="state-province" class="form-label fw-bold">State / Province</label>
+                            <select class="form-select form-select-lg">
+                                <option value=" ">Please Select</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label for="city" class="form-label fw-bold">City</label>
+                            <select class="form-select form-select-lg">
+                                <option value=" ">Please Select</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label for="" class="form-label fw-bold">Zip Code</label>
+                            <input type="text" name="zip-code" value="" class="form-control form-control-lg" />
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label for="address" class="form-label fw-bold">Address</label>
+                            <input type="text" name="email" value="" class="form-control form-control-lg" placeholder="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--right side-->
+            <div class="col-12 col-lg-6">
+                <h3 class="paragraph-font text-capitalize d-block d-md-none">Item details</h3>
+                <div class="d-flex flex-column">
+                    <!--first line form-->
+                    <div class="w-100 row g-3 align-items-center">
+                        <div class="col-12 col-lg-6 mt-0">
+                            <label for="" class="form-label fw-bold">Item 1</label>
+                            <input type="text" name="item-name" value="" class="form-control form-control-lg" placeholder="Item Name" />
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <a href="#" role="button" class="border p-3 rounded-pill text-uppercase purple-text fw-bold text-decoration-none">Add more <i class="fas fa-plus mx-1"></i></a>
+                        </div>
+                    </div>
+                    <!--table-->
+                    <div class="w-100 white-background p-3 rounded-2 custom-boxshadow my-5">
+                        <table class="table custom-table table-borderless">
+                            <thead>
+                                <tr class="login-background">
+                                    <td scope="col" class="customGrey-text text-uppercase fw-bold">product</td>
+                                    <td scope="col" class="customGrey-text text-uppercase fw-bold">Quantity</td>
+                                    <td scope="col" class="customGrey-text text-uppercase fw-bold">Price</td>
+                                    <td scope="col" class="customGrey-text text-uppercase fw-bold">Subtotal</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="align-middle">
+                                    <td scope="row" data-label="PRODUCT">Product Name</td>
+                                    <td scope="row" data-label="QUANTITY">2</td>
+                                    <td scope="row" data-label="PRICE">$100</td>
+                                    <td scope="row" data-label="SUBTOTAL">$200</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--Button-->
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <button class="btn btn-primary w-50 rounded-pill text-uppercase fw-normal" type="submit">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

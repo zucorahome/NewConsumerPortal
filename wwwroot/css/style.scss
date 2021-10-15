@@ -187,6 +187,21 @@ h6 {
     padding: 7px;
 }
 
+@mixin round-background($color,$widthHeight) {
+    background-color: $color;
+    width: #{$widthHeight}px;
+    height: #{$widthHeight}px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@mixin round-background-font($size,$color){
+    font-size:#{$size}em;
+    margin:0.25 0 0 0;
+    color:$color;
+}
+
 .minHeight100{
     min-height:100px;
 }
@@ -463,8 +478,8 @@ h6 {
    
 }
 
-.custom-dropshadow{
-
+.custom-boxshadow {
+    box-shadow: 0px 10px 20px #EEEFF3;
 }
 
 
@@ -475,4 +490,50 @@ h6 {
 
 .purple-border{
     border:1px solid $zucoraPurple;
+}
+
+/*Market Partner Profile*/
+
+.initalName-background{
+    @include round-background($lightPurple,80);
+}
+
+.payment-pref-icon {
+    @include round-background(rgba(111, 207, 151, 0.2),80);
+
+    p > i {
+        @include round-background-font(2,#4AC58A);
+    }
+}
+
+.map-icon-container {
+    @include round-background(rgba(86, 204, 242, 0.2),80);
+
+    p > i {
+        @include round-background-font(2,#56CCF2);
+    }
+}
+
+.banking-icon-container {
+    @include round-background(rgba(255, 179, 147, 0.2),80);
+
+    p > i {
+        @include round-background-font(2,#FFB393);
+    }
+}
+
+.location-icon-container {
+    @include round-background(rgba(67, 77, 160, 0.2),80);
+
+    p > i {
+        @include round-background-font(2,#434DA0);
+    }
+}
+
+.paymentMethod-icon {
+    @include round-background(rgba(188, 147, 255, 0.2),80);
+
+    p > i {
+        @include round-background-font(2,#BC93FF);
+    }
 }
