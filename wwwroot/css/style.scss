@@ -252,6 +252,140 @@ h6 {
     border-radius:.75rem !important;
 }
 
+/*Navigation*/
+/*Zucora Navigation*/
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    width: 2em;
+    height: 2em;
+}
+
+.custom-toggler .navbar-toggler {
+    border-color: rgba(255,255,255,0);
+    border: unset;
+}
+
+@media screen and (max-width:768px){
+    .navbar-brand{
+        width:75%;
+    }
+
+    .footer-logo{
+        width:40%;
+    }
+    .custom-dropdown-menu.dropdown-menu{
+        width:auto;
+    }
+}
+
+.custom-navLink {
+
+    &:hover {
+        background-color: white;
+        transition: all 0.5s ease-out;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        padding:5px 10px;
+        a {
+            color: $zucoraPurple !important;
+        }
+    }
+
+    a {
+        /*padding: 10px 10px 5px 10px;*/
+        font-size: 1em;
+    }
+}
+
+.custom-dropdown-menu.dropdown-menu {
+    position: absolute;
+    width: 30vw;
+    right: 0;
+    top: 105%;
+    background: white;
+    border-bottom: 4px solid #434da0;
+    z-index: 100;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    padding: 20px 15px;
+    /*display: grid;*/
+    grid-template-columns: 50% 50%;
+}
+
+.custom-dropdown-menu.dropdown-menu, .customTop-nav-dropdown.dropdown-menu {
+    border-radius: 0px !important;
+    border-bottom: 4px solid $zucoraPurple;
+}
+
+.custom-dropdown-menu .dropdown-item, .customTop-nav-dropdown .dropdown-item {
+    &:hover, &:focus {
+        color: $zucoraPurple;
+        background-color: $lightPurple !important;
+    }
+}
+
+/*Footer styling*/
+
+.footer-logo {
+    width: 10%;
+}
+
+.socialMedia-icons {
+    a {
+        transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+
+        i {
+            font-size: 1.5em;
+        }
+
+        &:hover {
+            background-color: white;
+            padding: 12px;
+ 
+
+            i {
+                color: $zucoraPurple !important;
+            }
+        }
+    }
+}
+
+.white-hr {
+    border-top: 2px solid white;
+}
+
+.footer-links > a {
+        transition: all 0.5s ease-out;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        &:hover {
+            background-color: white;
+            padding: 5px 10px;
+            color:$zucoraPurple !important;
+        }
+    
+}
+
+
+/*Custom Button*/
+.greenButton {
+    background-color: transparent;
+    border: 3px solid $zucoraGreen;
+    color: $zucoraGreen !important;
+    border-radius: 2em;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    padding: 15px 15px 10px 15px;
+
+    &:hover {
+        background-color: $zucoraGreen;
+        color: white !important;
+    }
+}
+
+
 /*Login page styling*/
 .login-imageBackground{
    @include background-image("consumer-portal","login-page.jpg");

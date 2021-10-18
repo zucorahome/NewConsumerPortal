@@ -11,20 +11,59 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">New_ConsumerPortal</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+        <!--dark grey header part-->
+        <div class="container-fluid darkGrey-background">
+            <div class="d-flex justify-content-end">
+                <div>
+                    <a href="#" class="text-uppercase white-text fw-bold">Login</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light purple-background">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://zucoradev.com/wp-content/uploads/2021/02/ZH_Logo_Horiz_White-e1612901933504.png" alt="Zucorahome logo in white colour." class="img-fluid" />
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-dark dropdown-toggle" href="#" id="loginPageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Consumer Portal Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle white-text text-uppercase fw-bold" id="planNavbar" role="button" data-bs-toggle="dropdown" aria-expanded="false">Smarter Living Plans</a>
+                            <div class="dropdown-menu custom-dropdown-menu" aria-labelledby="planNavbar">
+                                <div class="d-flex justify-content-between align-items-cneter p-3">
+                                    <div class="d-flex flex-column justify-content-start align-content-start w-50">
+                                        <a href="https://zucorahome.com/furniture-plan/" class="dropdown-item purple-text text-uppercase fw-bold text-wrap">Furniture Plan</a>
+                                        <a href="https://zucoradev.com/appliances-plan" class="dropdown-item purple-text text-uppercase fw-bold text-wrap">Appliances Plan</a>
+                                        <a href="https://zucoradev.com/home-system-plans" class="dropdown-item purple-text text-uppercase fw-bold text-wrap">Home Systems Plan</a>
+                                    </div>
+                                    <div class="d-sm-flex flex-column d-none d-md-block w-50">
+                                        <p class="lightGrey-text">Smarter Living is about making life more convenient.</p>
+                                        <img src="/images/consumer-portal/smarter-living.png" alt="An older smiling couple." class="img-fluid" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item custom-navLink">
+                            <a class="nav-link white-text text-uppercase fw-bold" href="https://request.zucorahome.com/">Service Request</a>
+                        </li>
+                        <li class="nav-item custom-navLink">
+                            <a class="nav-link white-text text-uppercase fw-bold" hrf="https://zucorahome.com/about-us/">About us</a>
+                        </li>
+                        <li class="nav-item custom-navLink">
+                            <a class="nav-link white-text text-uppercase fw-bold" href="https://zucorahome.com/blog">Blog</a>
+                        </li>
+                        <li class="nav-item custom-navLink">
+                            <a class="nav-link white-text text-uppercase fw-bold" href="https://shop.zucorahome.com/">Products</a>
+                        </li>
+                        <li class="nav-item my-2 my-sm-0">
+                            <a class="nav-link white-text text-uppercase fw-bold greenButton mx-1 text-center" href="https://zucorahome.com/get-a-quote/">Get a free quote</a>
+                        </li>
+                        <!--remove those links later-->
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link text-dark dropdown-toggle white-text" href="#" id="loginPageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Consumer Portal Pages</a>
                             <ul class="dropdown-menu" aria-labelledby="loginPageDropdown">
                                 <li class="">
                                     <a href="/login" class="dropdown-item">Login</a>
@@ -46,9 +85,9 @@
                                 </li>
                             </ul>
                         </li>
-                       
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-dark dropdown-toggle" href="#" id="marketPartnerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Market Partner Pages</a>
+                            <a class="nav-link text-dark dropdown-toggle white-text" href="#" id="marketPartnerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Market Partner Pages</a>
                             <ul class="dropdown-menu" aria-labelledby="marketPartnerDropdown">
                                 <li class="">
                                     <a href="/MarketPartner/partner-profile" class="dropdown-item">Market Partner Profile</a>
@@ -64,8 +103,11 @@
                                 </li>
                             </ul>
                         </li>
-                        
                     </ul>
+                    <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>-->
                 </div>
             </div>
         </nav>
@@ -76,12 +118,71 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - New_ConsumerPortal - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    <!--Footer starts-->
+    <footer class="footer purple-background p-2 p-md-4">
+        <div class="container-fluid">
+            <!--First horizontal part of footer-->
+            <div class="footer-firstContainer d-flex justify-content-between align-items-center flex-column flex-xl-row">
+                <!--First section of footer-->
+                <div class="d-flex flex-column justify-content-center mb-4 mb-md-0">
+                    <div>
+                        <a href="https://zucorahome.com/" target="_blank" class="text-center"><img src="/images/consumer-portal/ZH_Logo_White.png" alt="Zucora Home logo in white colour." class="img-fluid footer-ZHlogo mx-auto d-block" /></a>
+                    </div>
+                    <div class="d-flex justify-content-around align-items-center socialMedia-icons">
+                        <a href="https://www.facebook.com/zucorahomesmarterliving/" class="" target="_blank"><i class="fab fa-facebook-f white-text"></i></a>
+                        <a href="https://www.instagram.com/zucorahome/" class="" target="_blank"><i class="fab fa-instagram white-text"></i></a>
+                        <a href="https://www.linkedin.com/company/zucorahome/" class="" target="_blank"><i class="fab fa-linkedin-in white-text"></i></a>
+                    </div>
+                </div>
+
+                <!--second section of footer-->
+                <div class="d-flex justify-content-between align-content-start my-4 my-md-0">
+                    <div class="mx-2 mx-md-5">
+                        <p class="white-text fw-bold text-uppercase">About us</p>
+                        <div class="d-flex flex-column mt-2 footer-links">
+                            <a href="https://zucorahome.com/about-us/" class="white-text py-1 text-decoration-none">Our Story</a>
+                            <a href="https://zucorahome.com/about-us#ourTeam" class="white-text py-1 text-decoration-none">Our Team</a>
+                            <a href="https://zucorahome.com/culture/" class="white-text py-1 text-decoration-none">Our Culture</a>
+                        </div>
+                    </div>
+                    <div class="mx-2 mx-md-5">
+                        <p class="white-text fw-bold text-uppercase">Join Us</p>
+                        <div class="d-flex flex-column mt-2 footer-links">
+                            <a href="https://zucorahome.com/community/" class="white-text py-1 text-decoration-none">Community</a>
+                            <a href="https://contact.zucorahome.com/" class="white-text py-1 text-decoration-none">Contact us</a>
+                            <a href="https://zucorahome.com/careers/" class="white-text py-1 text-decoration-none">Careers</a>
+                            <a href="https://zucorahome.com/faq/" class="white-text py-1 text-decoration-none">FAQs</a>
+                        </div>
+                    </div>
+                    <div class="mx-2 mx-md-5">
+                        <p class="white-text fw-bold text-uppercase">Our Products</p>
+                        <div class="d-flex flex-column mt-2 footer-links">
+                            <a href="https://shop.zucorahome.com/" class="white-text py-1 text-decoration-none">Shop now</a>
+                            <a href="https://zucorahome.com/order-returns/" class="white-text py-1 text-decoration-none">Orders &amp; Returns</a>
+                            <a href="https://zucorahome.com/retailers/" class="white-text py-1 text-decoration-none">Retailers</a>
+                        </div>
+                    </div>
+                </div>
+                <!--third section of footer-->
+                <div class="my-4 my-md-0">
+                    <a class="text-uppercase fw-bold greenButton mx-1 text-center text-decoration-none" href="https://zucorahome.com/get-a-quote/">Get a free quote</a>
+                </div>
+            </div>
+            <!--Second horizontal -->
+            <hr class="white-hr" />
+            <div class="d-flex flex-column align-content-center justify-content-center footer-secondContainer">
+                <div class="d-flex justify-content-center">
+                    <img src="https://zucorahome.com/wp-content/uploads/2021/02/ZH_Icon_White.png" alt="ZH shield in white colour" class="img-fluid footer-logo" />
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a class="mx-1 white-text text-center" href="javascript:void(0)" data-toggle="modal" data-target=".PrivacyPolicyModal"><u>Privacy Policy</u></a>
+                    <a class="mx-1 white-text text-center" href="javascript:void(0)" data-toggle="modal" data-target="#conditionsOfUseModal"><u>Conditions of use</u></a>
+                    <a href="javascript:void(0)" class="mx-1 white-text text-center" data-toggle="modal" data-target=".memberAgreementPdf"><u>Member Service Agreement</u></a>
+                </div>
+            </div>
         </div>
     </footer>
-
+    <!--Footer code ends-->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
