@@ -325,10 +325,6 @@ h6 {
 
 /*Footer styling*/
 
-.footer-logo {
-    width: 10%;
-}
-
 .socialMedia-icons {
     a {
         transition: all 0.3s ease-out;
@@ -367,6 +363,17 @@ h6 {
     
 }
 
+@media screen and (max-width:768px){
+    .footer-logo {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width:769px){
+    .footer-logo {
+        width: 12%;
+    }
+}
 
 /*Custom Button*/
 .greenButton {
