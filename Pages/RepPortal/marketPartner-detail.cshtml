@@ -1,0 +1,79 @@
+﻿@page
+@model New_ConsumerPortal.Pages.RepPortal.marketPartner_detailModel
+@{
+
+}
+<div class="row g-0 login-background">
+    <div class="col-12 my-4 col-lg-10 offset-lg-1">
+       <a href="#" class="border p-3 rounded-pill text-uppercase purple-text text-decoration-none" role="button"><i class="fas fa-arrow-left mx-1"></i>Back to market partner</a>
+       <!--Market partner form-->
+
+        <div class="my-4 mx-2">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="paragraph-font fw-bold text-capitalize h3">ABC Furniture</h1>
+                <a href="#" class="border p-3 rounded-pill text-uppercase purple-text text-decoration-none">Edit<i class="fas fa-pencil-alt mx-1 purple-text"></i></a>
+            </div>
+            <div class="w-100 my-4">
+                <h5 class="paragraph-font purple-text">Key Contact</h5>
+                <form class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="mb-3">
+                            <label for="first-name" class="form-label fw-bold">First Name:</label>
+                            <input type="text" id="first-name" name="first-name" value="" class="form-control" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="last-name" class="form-label fw-bold">Last Name:</label>
+                            <input type="text" id="last-name" name="last-name" value="" class="form-control" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label fw-bold">Address:</label>
+                            <input type="text" id="address" name="address" value="" class="form-control" required />
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="mb-3">
+                            <label for="province" class="form-label fw-bold">Province:</label>
+                            <select class="form-select" id="province" required>
+                                <option selected="">Province</option>
+                                <option value="1">Alberta</option>
+                                <option value="2">British Columbia</option>
+                                <option value="3">Manitoba</option>
+                                <option value="4">New Brunswick</option>
+                                <option value="5">Newfoundland and Labrador</option>
+                                <option value="12">Northwest Territories</option>
+                                <option value="6">Nova Scotia</option>
+                                <option value="7">Nunavut</option>
+                                <option value="8">Ontario</option>
+                                <option value="9">Prince Edward Island</option>
+                                <option value="10">Québec</option>
+                                <option value="11">Saskatchewan</option>
+                                <option value="13">Yukon</option>
+                            </select>
+                            
+                        </div>
+                        <div class="mb-3">
+                            <label for="city" class="form-label fw-bold">City:</label>
+                            <select class="form-select" id="city" required>
+                                <option seelcted value=" ">Select</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="postal-code" class="form-label fw-bold">Postal Code:</label>
+                            <input type="text" id="postal-code" name="postal-code" value="" class="form-control" required />
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email ID:</label>
+                            <input type="email" name="email" id="email" value="" required class="form-control"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone-number" class="form-label">Phone Number</label>
+                            <input type="tel" name="phone-number" value="" id="phone-number" required class="form-control"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+       </div>
+    </div>
+</div>

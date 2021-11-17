@@ -1,0 +1,67 @@
+﻿@page
+@model New_ConsumerPortal.Pages.RepPortal.my_marketpartnersModel
+@{
+    ViewData["Title"] = "My Market Partners";
+}
+<div class="row g-0 login-background">
+    <div class="col-12 col-lg-10 offset-lg-1 mx-auto my-3">
+       <h1 class="paragraph-font fw-bold text-capitalize h3">My market partners</h1>
+       <form class="row align-items-center g-3">
+           <div class="col-12 col-md-3 d-flex justify-content-between align-items-center">
+               <label class="fw-bold form-label mb-0 me-3" for="">Status:</label>
+               <select class="form-select form-select-lg">
+                   <option value="all">All</option>
+                   <option value="one">One</option>
+               </select>
+           </div>
+           <div class="col-12 col-md-3 d-flex justify-content-between align-items-center">
+               <label class="fw-bold form-label mb-0 me-3" for="">Rep:</label>
+               <select class="form-select form-select-lg">
+                   <option value="Rick Potter">Rick Potter</option>
+                   <option value="null">XYZ</option>
+               </select>
+           </div>
+           <div class="col-12 col-md-3 d-flex align-items-center">
+               <!--<input type="search" name="search" value="" placeholder="Search" class="form-control form-control-lg" />-->
+                   <input type="search" name="transactions-search" value="" class="form-control form-control-lg search-padding" placeholder=" Search" aria-label="Search">
+                   <button type="submit" class="btn position-absolute"><i class="fas fa-search purple-text"></i></button>
+           </div>
+           <div class="col-12 col-md-3 d-flex justify-content-end">
+               <a href="#" class="btn btn-primary rounded-pill text-uppercase w-100">Add new market partner<i class="fas fa-plus mx-1"></i> </a>
+           </div>
+       </form>
+        <!--Table-->
+       <div class="w-100 white-background p-3 rounded-2 custom-boxshadow mx-auto my-5">
+           <table class="table custom-table table-borderless table-responsive-lg">
+               <thead>
+                   <tr class="login-background">
+                       <td scope="col" class="customGrey-text text-uppercase fw-normal">Store</td>
+                       <td scope="col" class="customGrey-text text-uppercase fw-normal">Location</td>
+                       <td scope="col" class="customGrey-text text-uppercase fw-normal">Total Sales (YTD)</td>
+                       <td scope="col" class="customGrey-text text-uppercase fw-normal">Current Plan Program</td>
+                       <td scope="col" class="customGrey-text text-uppercase fw-normal">Program start</td>
+                       <td scope="col" class="customGrey-text text-uppercase fw-normal">Status</td>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr class="align-middle border-bottom">
+                       <td scope="row" data-label="Store">ABC Furniture</td>
+                       <td scope="row" data-label="Location">London, ON</td>
+                       <td scope="row" data-label="Total Sales (YTD)">$12,111</td>
+                       <td scope="row" data-label="Current Plan Program">SmartOne</td>
+                       <td scope="row" data-label="Start Date"><i class="far fa-calendar-alt customGrey-text mx-1"></i>09/09/2021</td>
+                       <td scope="row" data-label="Status"><p class="status-inprogress text-center text-uppercase mb-0 p-2 mb-3 mb-lg-0">Partner</p></td>
+                   </tr>
+                   <tr class="align-middle border-bottom">
+                       <td scope="row" data-label="Store">Todd's Furniture'</td>
+                       <td scope="row" data-label="Location">WoodStock, ON</td>
+                       <td scope="row" data-label="Total Sales (YTD)">$2300.94</td>
+                       <td scope="row" data-label="Current Plan Program">Smart 3/5</td>
+                       <td scope="row" data-label="Start Date"><i class="far fa-calendar-alt customGrey-text mx-1"></i>07/20/2021</td>
+                       <td scope="row" data-label="Status"><p class="status-inprogress text-center text-uppercase mb-0 p-2 mb-3 mb-lg-0">Prospect</p></td>
+                   </tr>
+               </tbody>
+               </table>
+       </div>
+    </div>
+</div>
