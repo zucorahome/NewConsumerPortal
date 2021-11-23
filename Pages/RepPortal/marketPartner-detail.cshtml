@@ -1,21 +1,22 @@
 ﻿@page
 @model New_ConsumerPortal.Pages.RepPortal.marketPartner_detailModel
 @{
-
+    ViewData["Title"] = "My Market Partners - Details";
 }
 <div class="row g-0 login-background">
     <div class="col-12 my-4 col-lg-10 offset-lg-1">
-       <a href="#" class="border p-3 rounded-pill text-uppercase purple-text text-decoration-none" role="button"><i class="fas fa-arrow-left mx-1"></i>Back to market partner</a>
+       <a href="../Pages/RepPortal/my-marketpartners" class="border p-3 rounded-pill text-uppercase purple-text text-decoration-none" role="button"><i class="fas fa-arrow-left mx-1"></i>Back to market partner</a>
        <!--Market partner form-->
 
         <div class="my-4 mx-2">
             <div class="d-flex justify-content-between align-items-center">
                 <h1 class="paragraph-font fw-bold text-capitalize h3">ABC Furniture</h1>
-                <a href="#" class="border p-3 rounded-pill text-uppercase purple-text text-decoration-none">Edit<i class="fas fa-pencil-alt mx-1 purple-text"></i></a>
+                <a href="#" class="border rounded-pill text-uppercase purple-text text-decoration-none pt-2 pb-1 pe-2 ps-3">Edit<i class="fas fa-pencil-alt mx-1 purple-text"></i></a>
             </div>
             <div class="w-100 my-4">
                 <h5 class="paragraph-font purple-text">Key Contact</h5>
-                <form class="row">
+                <!---->
+                <div class="row">
                     <div class="col-12 col-lg-4">
                         <div class="mb-3">
                             <label for="first-name" class="form-label fw-bold">First Name:</label>
@@ -49,7 +50,7 @@
                                 <option value="11">Saskatchewan</option>
                                 <option value="13">Yukon</option>
                             </select>
-                            
+
                         </div>
                         <div class="mb-3">
                             <label for="city" class="form-label fw-bold">City:</label>
@@ -64,15 +65,114 @@
                     </div>
                     <div class="col-12 col-lg-4">
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email ID:</label>
-                            <input type="email" name="email" id="email" value="" required class="form-control"/>
+                            <label for="email" class="form-label fw-bold">Email ID:</label>
+                            <input type="email" name="email" id="email" value="" required class="form-control" />
                         </div>
                         <div class="mb-3">
-                            <label for="phone-number" class="form-label">Phone Number</label>
-                            <input type="tel" name="phone-number" value="" id="phone-number" required class="form-control"/>
+                            <label for="phone-number" class="form-label fw-bold">Phone Number</label>
+                            <input type="tel" name="phone-number" value="" id="phone-number" required class="form-control" />
                         </div>
                     </div>
-                </form>
+                </div>
+            </div>
+            <div class="row my-3">
+                <!--hr-->
+                <div class="col-12">
+                    <hr />
+                    <h5 class="paragraph-font purple-text">Other Contact</h5>
+                </div>
+                <!---->
+                    <div class="col-12 col-lg-4">
+                        <div class="mb-3">
+                            <label for="first-name" class="form-label fw-bold">First Name:</label>
+                            <input type="text" id="first-name" name="first-name" value="" class="form-control" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="last-name" class="form-label fw-bold">Last Name:</label>
+                            <input type="text" id="last-name" name="last-name" value="" class="form-control" required />
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold">Email ID:</label>
+                            <input type="email" name="email" id="email" value="" required class="form-control" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone-number" class="form-label fw-bold">Phone Number</label>
+                            <input type="tel" name="phone-number" value="" id="phone-number" required class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <label for="notes" class="form-label fw-bold">Notes</label>
+                        <textarea name="notes" id="notes" rows="5" placeholder="Notes" class="form-control"></textarea>
+                    </div>
+            </div>
+            <!--boxes-->
+            <div class="row my-5 gx-0 gy-3 justify-content-center">
+                <!--Partner since-->
+                <div class="col-sm-12 col-md-6 col-lg-2 white-background shadow-sm mx-lg-2">
+                    <div class="d-flex flex-column align-items-center p-3">
+                        <div class="location-icon-container rounded-circle mb-3">
+                            <p class="text-uppercase paragraph-font mb-0 text-center"><i class="far fa-handshake"></i></p>
+                        </div>
+                        <div>
+                            <!--<form class="mb-3">
+        <input type="date" name="partner-since-date" value="" class="form-control" />
+    </form>-->
+                            <h5 class="fw-bold text-center paragraph-font">Partner Since</h5>
+                            <p class="text-center" id="">Jan 18th, 2019</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Current Plan-->
+                <div class="col-sm-12 col-md-6 col-lg-2 white-background shadow-sm mx-lg-2">
+                    <div class="d-flex flex-column align-items-center p-3">
+                        <div class="map-icon-container rounded-circle mb-3">
+                            <p class="text-uppercase paragraph-font mb-0 text-center"><i class="fas fa-house-user"></i></p>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold text-center paragraph-font">Current Plan Program</h5>
+                            <p class="text-center" id="current-plan">Smart One</p>
+                        </div>
+                    </div>
+                </div>
+                <!--YTD Sales-->
+                <div class="col-sm-12 col-md-6 col-lg-2 white-background shadow-sm mx-lg-2">
+                    <div class="d-flex flex-column align-items-center p-3">
+                        <div class="payment-pref-icon rounded-circle mb-3">
+                            <p class="text-uppercase paragraph-font mb-0 text-center"><i class="fas fa-wallet"></i></p>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold text-center paragraph-font">YTD Sales</h5>
+                            <p class="text-center" id="ytd-sales">$12,117.42</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Products Sold-->
+                <div class="col-sm-12 col-md-6 col-lg-2 white-background shadow-sm mx-lg-2">
+                    <div class="d-flex flex-column align-items-center p-3">
+                        <div class="paymentMethod-icon rounded-circle mb-3">
+                            <p class="text-uppercase paragraph-font mb-0 text-center"><i class="fas fa-cart-arrow-down"></i></p>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold text-center paragraph-font">Products Sold</h5>
+                            <p class="text-center" id="">Furniture, Appliance, Area Rugs, Dining Room, Bedroom</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Last Order Place-->
+                <div class="col-sm-12 col-md-6 col-lg-2 white-background shadow-sm mx-lg-2">
+                    <div class="d-flex flex-column align-items-center p-3">
+                        <div class="banking-icon-container rounded-circle mb-3">
+                            <p class="text-uppercase paragraph-font mb-0 text-center"><i class="fas fa-file-invoice-dollar"></i></p>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold text-center paragraph-font">Last Order Placed</h5>
+                            <p class="text-center" id="">Nov 18th, 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <!--ends-->
             </div>
        </div>
     </div>
