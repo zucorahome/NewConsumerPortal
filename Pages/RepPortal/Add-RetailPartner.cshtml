@@ -3,15 +3,150 @@
 @{
     ViewData["Title"] = "Add new Retail Parnter";
 }
-<div class="row g-0 login-background">
-    <h1 class="paragraph-font fw-bold text-capitalize h3">Retail Partner</h1>
-    <div class="col-12 col-lg-6">
-        <div class="mb-3">
-            <label for="" class="form-label">Store Name</label>
-            <input type="text" name="" class="" id="" value="" placeholder="What is the storefront called?" />
+<div class="row login-background g-0">
+
+    <div class="col-12 col-lg-10 col-xl-8 offset-xl-2 offset-lg-1">
+        <h1 class="paragraph-font fw-bold text-capitalize h3 p-3 mb-0"> Add a New Retail Partner</h1>
+        <div class="row p-3">
+            <div class="col-12 col-lg-6">
+                <div class="mb-3">
+                    <label for="storeName" class="form-label fw-bold">Store Name</label>
+                    <input type="text" name="storeName" class="form-control form-control-lg" id="storeName" value="" placeholder="What is the storefront called?" />
+                </div>
+                <div class="mb-3">
+                    <label for="legalName" class="form-label fw-bold">Legal Name</label>
+                    <input type="text" name="legalName" class="form-control form-control-lg" id="legalName" value="" />
+                    <p class="text-muted"><small>For billing purposes, please provide the legal business name here. (For example: Ontario Corporation 103920390)</small></p>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label fw-bold">Address</label>
+                    <input type="text" name="address" class="form-control form-control-lg" id="address" value="" placeholder="What is the store location?" />
+                </div>
+                <div class="mb-3">
+                    <label for="city" class="form-label fw-bold">City</label>
+                    <input type="text" name="city" class="form-control form-control-lg" id="city" value="" />
+                </div>
+                <div class="row g-3 mb-3">
+                    <div class="col-12 col-md-6">
+                        <label for="" class="form-label fw-bold">Province</label>
+                        <select class="form-select form-select-lg">
+                            <option selected="">Province</option>
+                            <option value="1">Alberta</option>
+                            <option value="2">British Columbia</option>
+                            <option value="3">Manitoba</option>
+                            <option value="4">New Brunswick</option>
+                            <option value="5">Newfoundland and Labrador</option>
+                            <option value="12">Northwest Territories</option>
+                            <option value="6">Nova Scotia</option>
+                            <option value="7">Nunavut</option>
+                            <option value="8">Ontario</option>
+                            <option value="9">Prince Edward Island</option>
+                            <option value="10">Québec</option>
+                            <option value="11">Saskatchewan</option>
+                            <option value="13">Yukon</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="postalCode" class="form-label fw-bold">Postal Code</label>
+                        <input type="text" name="postalCode" class="form-control form-control-lg" id="postalCode" value="" />
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="" class="form-label fw-bold">Country</label>
+                    <select class="form-select form-select-lg">
+                        <option selected="" value="Canada">Canada</option>
+                        <option value="U.S.A"> USA</option>
+                    </select>
+                </div>
+                <p class="form-label fw-bold">Language Preference</p>
+                <div class="mb-3 form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="langaugeEnglish" value="English" />
+                    <label for="langaugeEnglish" class="form-check-label">English</label>
+                </div>
+                <div class="mb-3 form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="langaugeFrench" value="French" />
+                    <label for="langaugeFrench" class="form-check-label">French</label>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="mb-3">
+                    <label for="primaryContact" class="form-label fw-bold">Primary Contact</label>
+                    <input type="text" name="primaryContact" class="form-control form-control-lg" id="primaryContact" value="" />
+                </div>
+                <div class="mb-3">
+                    <label for="email-newPartner" class="form-label fw-bold">Email Address</label>
+                    <input type="email" name="email-newPartner" class="form-control form-control-lg" id="email-newPartner" value="" />
+                </div>
+                <div class="mb-3 margin-top-lg-4">
+                    <label for="jobTitle" class="form-label fw-bold">Job Title(optional)</label>
+                    <input type="text" name="jobTitle" class="form-control form-control-lg" id="jobTitle" value="" />
+                </div>
+                <div class="mb-3">
+                    <label for="phoneNumber" class="form-label fw-bold">Phone Number</label>
+                    <input type="tel" name="phoneNumber" class="form-control form-control-lg" id="phoneNumber" value="" />
+                </div>
+                <div class="mb-3">
+                    <label for="otherContact" class="form-label fw-bold">Other Contact</label>
+                    <input type="text" name="otherContact" class="form-control form-control-lg" id="otherContact" value="" />
+                </div>
+                <div class="mb-3">
+                    <label for="OtherphoneNumber" class="form-label fw-bold">Alternate Phone</label>
+                    <input type="tel" name="OtherphoneNumber" class="form-control form-control-lg" id="OtherphoneNumber" value="" />
+                </div>
+                <div class="mb-3">
+                    <label for="buyingGroup" class="form-label fw-bold">Buying Group</label>
+                    <input type="text" name="buyingGroup" class="form-control form-control-lg" id="buyingGroup" value="" />
+                </div>
+                <div class="mb-3">
+                    <label for="memberID" class="form-label fw-bold">Group Member ID</label>
+                    <input type="text" name="memberID" class="form-control form-control-lg" id="memberID" value="" />
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-lg-end justify-content-center mb-4 mx-3">
+            <button class="btn btn-primary text-uppercase rounded-pill">Continue</button>
         </div>
     </div>
-    <div class="col-12 col-lg-6">
+</div>
+<!--Modal\-->
+<!--Success Submit Modal-->
+<div class="modal fade" tabindex="-1" id="sucess-AddRetailPartner" aria-labelledby="sucess-AddRetailPartnerLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="sucess-AddRetailPartnerLabel">Success!</h3>
+                <button type="button" class="btn-close justify-content-end" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-center flex-column p-4">
+                <img src="~/images/consumer-portal/success-icon.svg" class="img-fluid createAccount-success mx-auto" alt="" />
+                <p class="fw-bold text-center mt-4">Please check your email</p>
+                <p class="text-center">Your request to add [XYZ Retailer] has been received. We will notify you by email when we have processed your request.</p>
 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary w-100 text-uppercase" data-bs-dismiss="modal">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Failed modal-->
+
+<div class="modal fade" tabindex="-1" id="Failed-AddRetailPartner" aria-labelledby="Failed-AddRetailPartnerLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="Failed-AddRetailPartner">Oops!</h3>
+                <button type="button" class="btn-close justify-content-end" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-center flex-column p-4">
+                <img src="~/images/consumer-portal/failed-modal-icon.png" class="img-fluid mx-auto" alt="" />
+                <p class="fw-bold text-center mt-4">Please check your email</p>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor facilisi in id id facilisi fermentum.</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary w-100 text-uppercase" data-bs-dismiss="modal">Try Again</button>
+            </div>
+        </div>
     </div>
 </div>
