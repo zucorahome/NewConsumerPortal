@@ -1,0 +1,97 @@
+﻿@page
+@model New_ConsumerPortal.Pages.RepPortal.RetailPartner.personal_profileModel
+@{
+    ViewData["Title"] = "Personal Profile";
+}
+<div class="row g-0 login-background justify-content-center">
+    <div class="col-11 my-4 col-lg-10 offset-lg-1">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="paragraph-font fw-bold text-capitalize h3">Personal Profile</h1>
+            <a href="#" class="purple-background text-uppercase white-text text-decoration-none pt-2 pb-1 pe-2 ps-3 rounded-pill">Edit<i class="fas fa-pencil-alt mx-1 white-text"></i></a>
+        </div>
+        <div class="row my-3">
+            <h2 class="paragraph-font purple-text text-capitalize h5">General Information</h2>
+            <div class="col-12 col-lg-6">
+                <div class="mb-3">
+                    <label for="rep-name" class="form-label fw-bold">Representative</label>
+                    <input type="text" id="rep-name" name="rep-name" value="" class="form-control form-control-lg" required />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label fw-bold">Email ID:</label>
+                    <input type="email" name="email" id="email" value="" required class="form-control form-control-lg" />
+                </div>
+                <div class="mb-3">
+                    <label for="business-name" class="form-label fw-bold">Business Name</label>
+                    <input type="text" id="business-name" name="business-name" value="" class="form-control form-control-lg" required />
+                    <p class="text-muted"><small>Please provide the legal business name here (For example: Ontario Corporation 103920390)</small></p>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label fw-bold">Address</label>
+                    <input type="text" id="address" name="address" value="" class="form-control form-control-lg" required />
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="mb-3">
+                    <label for="city" class="form-label fw-bold">City</label>
+                    <input type="text" id="city" name="city" value="" class="form-control form-control-lg" required />
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-3">
+                        <label for="province" class="form-label fw-bold">Province</label>
+                        <select class="form-select form-select-lg" id="province" required>
+                            <option selected="">Province</option>
+                            <option value="1">Alberta</option>
+                            <option value="2">British Columbia</option>
+                            <option value="3">Manitoba</option>
+                            <option value="4">New Brunswick</option>
+                            <option value="5">Newfoundland and Labrador</option>
+                            <option value="12">Northwest Territories</option>
+                            <option value="6">Nova Scotia</option>
+                            <option value="7">Nunavut</option>
+                            <option value="8">Ontario</option>
+                            <option value="9">Prince Edward Island</option>
+                            <option value="10">Québec</option>
+                            <option value="11">Saskatchewan</option>
+                            <option value="13">Yukon</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3">
+                        <label for="postal-code" class="form-label fw-bold">Postal Code</label>
+                        <input type="text" id="postal-code" name="postal-code" value="" class="form-control form-control-lg" required />
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="country" class="form-label fw-bold">Country</label>
+                    <select class="form-select form-select-lg" id="country" required>
+                        <option value="">Select</option>
+                        <option value="CAN">Canada</option>
+                        <option value="USA">U.S.A</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="row my-3">
+            <h2 class="paragraph-font purple-text text-capitalize h5">You banking details</h2>
+            <div class="col-12 col-lg-6">
+                <div class="mb-3">
+                    <label for="transit-number" class="form-label fw-bold">Transit Number</label>
+                    <input type="number" id="transit-number" name="transit-number" value="" class="form-control form-control-lg" required />
+                </div>
+                <div class="mb-3">
+                    <label for="institution-number" class="form-label fw-bold">Institution Number</label>
+                    <input type="number" id="institution-number" name="institution-number" value="" class="form-control form-control-lg" required />
+                </div>
+                <div class="mb-3">
+                    <label for="account-number" class="form-label fw-bold">Account Number</label>
+                    <input type="number" id="account-number" name="account-number" value="" class="form-control form-control-lg" required />
+                </div>
+            </div>
+        </div>
+        <!--Button-->
+        <div class="d-flex justify-content-center">
+            <button class="text-uppercase btn btn-primary rounded-pill">Save</button>
+        </div>
+    </div>
+    
+</div>
