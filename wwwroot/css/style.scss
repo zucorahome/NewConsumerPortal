@@ -155,6 +155,9 @@ h6 {
     color: $lightGrey;
 }
 
+.customGreen-text {
+    color: #4AC58A;
+}
 .white-text {
     color: white !important;
 }
@@ -241,9 +244,10 @@ h6 {
     background-color: $zucoraPurple;
     border-color: $zucoraPurple;
 
-    &:hover {
+    &:hover, &:focus {
         background-color: $lilacPurple;
         border-color: $lilacPurple;
+        box-shadow: 0 0 0 0.25rem rgba(67,77,160,0.5);
     }
 }
 
@@ -260,6 +264,21 @@ h6 {
     border-radius: .75rem !important;
 }
 
+.accordion-item {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.accordion-button:not(.collapsed) {
+    color: $zucoraPurple;
+    background-color: #F7F8FC;
+
+    &::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    }
+}
 /*Navigation*/
 /*Zucora Navigation*/
 .custom-toggler .navbar-toggler-icon {
@@ -701,7 +720,9 @@ h6 {
     }
 
     .status-completed, .status-inprogress, .status-canceled {
-        float: right;
+        //float: right;
+        width:75%;
+        margin-left:25%;
     }
 }
 
@@ -1349,8 +1370,39 @@ h6 {
     border-radius: 20px;
 }
 
-@media screen and (min-width:1024px){
-    .margin-top-lg-4 {
-        margin-top:4em;
+.shield-background {
+    position: relative;
+    height: auto;
+    width: 100%;
+
+    &::before {
+        background-image: url(https://zucorahome.com/wp-content/uploads/2022/01/Half-purple-shield.png);
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        opacity: 0.15;
     }
+}
+
+@media screen and (min-width:1024px) {
+    .margin-top-lg-4 {
+        margin-top: 4em;
+    }
+
+    .promotion-box {
+        min-height: 335px;
+    }
+}
+
+#AllSmarterLivingPlans, #FurniturePlan, #AppliancePlan, #HomeSystemPlan {
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
 }
