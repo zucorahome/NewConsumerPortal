@@ -178,6 +178,9 @@ h6 {
     text-align: right;
 }
 
+.zucoraGreen-text{
+    color:$zucoraGreen;
+}
 /*Mixins*/
 
 @mixin background-image($folder,$image) {
@@ -213,6 +216,10 @@ h6 {
     min-height: 100px;
 }
 
+.minHeight170{
+    min-height:170px;
+}
+
 /*Background classes*/
 .purple-background {
     background-color: $zucoraPurple;
@@ -236,6 +243,10 @@ h6 {
 
 .darkGrey-background {
     background-color: $darkGrey;
+}
+
+.zucoraGreen-background{
+    background-color:$zucoraGreen;
 }
 
 /*Bootstrap class changes*/
@@ -1370,7 +1381,7 @@ h6 {
     border-radius: 20px;
 }
 
-.shield-background {
+.shield-background, .white-shield-background {
     position: relative;
     height: auto;
     width: 100%;
@@ -1384,9 +1395,17 @@ h6 {
         position: absolute;
         top: 0px;
         right: 0px;
-        left: 0px;
+        //left: 0px;
         bottom: 0px;
         opacity: 0.15;
+        left:45%;
+        width:55%;
+    }
+}
+
+.white-shield-background {
+    &::before {
+        background-image: url(https://zucorahome.com/wp-content/uploads/2022/02/ZH_Icon_White.png) !important;
     }
 }
 
@@ -1400,9 +1419,15 @@ h6 {
     }
 }
 
-#AllSmarterLivingPlans, #FurniturePlan, #AppliancePlan, #HomeSystemPlan {
-    transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
+#AllSmarterLivingPlans, #FurniturePlan, #AppliancePlan, #HomeSystemPlan, #AllSmartOnePlans, #FurnitureSmartOne, #ApplianceSmartOne  {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width:1024px){
+    .border-end{
+        border-right:none;
+    }
 }
